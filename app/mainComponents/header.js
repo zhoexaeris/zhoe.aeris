@@ -12,7 +12,7 @@ const Tagline = () => {
       cursor={true}
       sequence={['An aspiring UI/UX Designer from De La Salle University Manila.', 2000]}
       repeat={Infinity}
-      className='lg:text-left sm:pr-5'
+      className='lg:text-left'
     />
   )
 }
@@ -27,7 +27,7 @@ const Header = ({color}) => {
         <div className='quicksand font-extrabold text-5xl lg:text-left lg:px-0'>
             Hi, I am <span className='text-[#9F6361]'>Zhoe Aeris</span>
         </div> 
-        <div className='text-xl lg:text-left pt-2'>
+        <div className='text-xl lg:text-left py-2'>
             <Tagline />
         </div>
         <div className='lg:py-2 pt-2 opacity-0 animate-fade-in-delayed'>
