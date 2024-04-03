@@ -10,7 +10,7 @@ const Tagline = () => {
   return (
      <TypeAnimation
       cursor={true}
-      sequence={['An aspiring UI/UX Designer from De La Salle University Manila.', 2000]}
+      sequence={['aspiring UI/UX Designer from De La Salle University Manila.', 2000]}
       repeat={Infinity}
       className='lg:text-left'
     />
@@ -28,7 +28,7 @@ const Header = ({color}) => {
             Hi, I am <span className='text-[#9F6361]'>Zhoe Aeris</span>
         </div> 
         <div className='text-xl lg:text-left py-2'>
-            <Tagline />
+            An <Tagline />
         </div>
         <div className='lg:py-2 pt-2 opacity-0 animate-fade-in-delayed'>
             <ul className='font-semibold items-center justify-center lg:justify-start flex'>
