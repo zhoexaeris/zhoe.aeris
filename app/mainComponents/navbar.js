@@ -1,13 +1,13 @@
 import React from 'react'
 import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faStar }  from '@fortawesome/free-regular-svg-icons';
+import { faStar }  from '@fortawesome/free-solid-svg-icons';
 
 const Navbar = ({color}) => {
     const starIcon = <FontAwesomeIcon icon={faStar} className="w-7 h-7"/>
     return (
-        <nav className={`w-full ${color} px-5 py-3 items-center text-xl quicksand sm:flex lg:px-64`}>
-            <div className="flex justify-center w-full p-3 sm:flex-1">
+        <nav className={`w-full ${color} px-5 py-3 items-center text-xl quicksand sm:flex lg:px-64 text-[#9F6361]`}>
+            <div className="flex justify-center w-full p-3 sm:flex-1 hover:text-[#D88080]">
                 <Link href={"/"}>{starIcon}</Link>
             </div>
             <div className="flex justify-center w-full sm:justify-end">
