@@ -38,7 +38,7 @@ const Header = ({color}) => {
             </ul>
         </div>
       </div>
-      <div className='flex items-center justify-center py-5 lg:flex-2 lg:justify-end '>
+      <div className='flex items-center justify-center py-5  lg:flex-2 lg:justify-end'>
         <img src="images/me.jpg" className='w-64 rounded-full shadow-3xl lg:w-96'/>
       </div>
     </section>
