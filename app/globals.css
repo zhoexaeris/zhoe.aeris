@@ -39,3 +39,19 @@ body {
 .source-sans-3 {
   font-family: var(--font-source-sans-3);
 }
+
+@keyframes fade-in-delayed {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.animate-fade-in-delayed {
+  animation: fade-in-delayed 0.3s ease-in-out 5s forwards;
+}
