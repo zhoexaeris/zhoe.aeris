@@ -13,8 +13,8 @@ const Navbar = ({color}) => {
             <div className="flex justify-center w-full sm:justify-end">
                 <ul className='text-center font-semibold sm:items-center flex'>
                     <li className='hover:underline'><Link href={"/"}>Projects</Link></li>
-                    <li className='hover:underline pl-3'><Link href={"/about"}>About</Link></li>
-                    <li className='pl-3 hover:underline'><a href={"https://drive.google.com/file/d/1J60ZguzLY0pJHCPzgJjatSVbvxgU9pGG/view?usp=sharing" } target="_blank">Resume</a></li>
+                    <li className='hover:underline pl-5'><Link href={"/about"}>About</Link></li>
+                    <li className='pl-5 hover:underline'><a href={"https://drive.google.com/file/d/1J60ZguzLY0pJHCPzgJjatSVbvxgU9pGG/view?usp=sharing" } target="_blank">Resume</a></li>
                 </ul>
 
             </div>
