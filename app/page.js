@@ -1,4 +1,5 @@
 import Navbar from "./mainComponents/navbar";
+import Header from "./mainComponents/header";
 
 export default function Home() {
   return (
@@ -6,9 +7,10 @@ export default function Home() {
       <div className="bg-red w-full">
         <Navbar color="bg-red" />
       </div>
-      <div className="quicksand">this is quicksand</div>
-      <div className="source-sans-3">this is source sans</div>
-      <div className="load color bg-red "> h</div>
+      <div className="body">
+        <Header color="red" />
+      </div>
+      <div className="load color bg-red hidden"> h</div>
     </main>
   );
 }
