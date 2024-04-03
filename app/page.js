@@ -1,6 +1,7 @@
 import Navbar from "./mainComponents/navbar.js";
 import Header from "./mainComponents/header.js";
 import Footer from "./mainComponents/Footer.js";
+import Projects from "./mainComponents/projects.js";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       </div>
       <div className="body">
         <Header color="bg-[#E7CBCB]" />
+        <Projects />
       </div>
       <div>
         <Footer />
