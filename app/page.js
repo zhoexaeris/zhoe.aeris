@@ -1,5 +1,6 @@
 import Navbar from "./mainComponents/navbar.js";
 import Header from "./mainComponents/header.js";
+import Footer from "./mainComponents/Footer.js";
 
 export default function Home() {
   return (
@@ -11,7 +12,7 @@ export default function Home() {
         <Header color="bg-[#E7CBCB]" />
       </div>
       <div>
-        
+        <Footer />
       </div>
       <div className="load color bg-red hidden"> h</div>
     </main>
