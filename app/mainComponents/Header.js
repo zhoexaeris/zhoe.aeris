@@ -23,7 +23,7 @@ const Header = ({color}) => {
   const emailIcon = <FontAwesomeIcon icon={faEnvelope} className="w-9 h-9"/>
   return (
     <section className={`flex flex-col flex-wrap w-full h-screen items-center justify-center lg:flex-row lg:px-64 text-[#D88080] bg-[#E7CBCB]`}>
-      <div className='lg:flex-1 w-full items-center text-center lg:pl-2'>
+      <div className='lg:flex-1 w-full items-center text-center lg:pl-32'>
         <div className='quicksand font-extrabold text-5xl lg:text-left lg:px-0'>
             Hi, I am <span className='text-[#9F6361]'>Zhoe Aeris</span>
         </div> 
