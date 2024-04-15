@@ -1,6 +1,6 @@
 import React from 'react';
-import Navbar from '../../mainComponents/Navbar.js'
-import Footer from '../../mainComponents/Footer.js'
+import Navbar from '@/app/components/Navbar'
+import Footer from '@/app/components/Footer';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBusSimple } from '@fortawesome/free-solid-svg-icons';
 
