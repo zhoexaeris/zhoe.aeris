@@ -1,9 +1,9 @@
-import React from 'react'
+import React from 'react';
 import Navbar from '../../mainComponents/Navbar.js'
 import Footer from '../../mainComponents/Footer.js'
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBusSimple } from '@fortawesome/free-solid-svg-icons';
+
 
 function page() {
   const busIcon = <FontAwesomeIcon icon={faBusSimple} className="w-20 h-20 lg:w-40 lg:h-40"/>
@@ -26,12 +26,12 @@ function page() {
                     <b>Tools: </b>      Canva, Figma, Miro, Google Forms
                 </div>
                 <div className='pt-3'>
-                    <button className='btn quicksand btn-outline border-[#804F4D] text-[#804F4D] hover:bg-[#804F4D] hover:text-[#F9F5F6] hover:border-[#804F4D]'>read more</button>
+                    <a href="#body"><button className='btn quicksand btn-outline border-[#804F4D] text-[#804F4D] hover:bg-[#804F4D] hover:text-[#F9F5F6] hover:border-[#804F4D]'>read more</button></a>
                 </div>
             </div>
         </div>
         <div className='bg-[#F9F5F6] px-7 lg:px-64'>
-            <div className='pt-20 pb-10'>
+            <div className='pt-20 pb-10' id="body">
                 <div className='quicksand items-center justify-center flex flex-col bg-[#FFEECC] rounded-xl '>
                     <div className='text-center text-5xl quicksand font-bold pt-10 pb-5'>
                         The Problem
@@ -49,9 +49,9 @@ function page() {
                             Goal
                         </div>
                         <p className='text-justify text-2xl font-regular source-sans-3 py-2'>
-                        Create an application for commuters to plan and share personalized routes within Metro 
-                        Manila using current information, get news and reports about surrounding routes, and 
-                        download routes for offline use.
+                        Create an <b>application</b> for commuters to <b>plan and share personalized routes</b> within Metro 
+                        Manila using current information, <b>get news and reports</b> about surrounding routes, and 
+                        <b>download routes</b> for offline use.
                         </p>
                     </div>
                     <div className='flex-1 px-10'>
@@ -59,8 +59,8 @@ function page() {
                             Role
                         </div>
                         <p className='text-justify text-2xl font-regular source-sans-3 py-2'>
-                        As the lead designer, I created the visual design and user interactions, including the 
-                        logo, wireframes, and prototypes. I also participated in the needfinding study and 
+                        As the lead designer, I created the <b>visual design</b> and <b>user interactions</b>, including the  
+                        <b> logo</b>, <b>wireframes</b>, and <b>prototypes</b>. I also participated in the needfinding study and 
                         conducted user interviews.
                         </p>
                     </div>
@@ -168,17 +168,17 @@ function page() {
                 </div>
                 <div className='flex'>
                     <div className='flex-1 source-sans-3 text-lg text-justify pr-5'>
-                    PasaHero was my second most significant project in Figma and my first mobile application 
-                    design. It definitely was a big learning curve for me, mainly because of the prototyping 
-                    feature that we created. During this project, I learned how to create variables and make 
-                    the prototype more realistic and interactive, ensuring that the users stay engaged and 
+                    PasaHero was my second most significant project in Figma and <u>my first mobile application design</u>. 
+                    It definitely was a <u>big learning curve</u> for me, mainly because of the prototyping 
+                    feature that we created. During this project, I learned how to <u>utilize variables and components in figma</u>,  
+                    to make the prototype more realistic and interactive, ensuring that the users stay engaged and 
                     the application can deliver its features.
                     </div>
                     <div className='flex-1 source-sans-3 text-lg text-justify'>
                     As cliche as it sounds, conducting a study like this takes a lot of understanding and 
-                    empathy to the people that you want to work for. I learned that by putting my own feet 
-                    in their shoes, it will help me navigate through their pain points and not only solve 
-                    the symptoms of the problem, but the **root cause** of the problem. With that, solutions 
+                    empathy to the people that you want to work for. I learned that <u>by putting my own feet
+                    in their shoes</u> , it will help me <u>navigate through their pain points</u> and not only solve 
+                    the symptoms of the problem, but the <u>root cause</u> of the problem. With that, solutions 
                     will come to a breeze.
                     </div>
                 </div>
@@ -189,8 +189,8 @@ function page() {
                     FUTURE STEPS
                 </div>
                 <div className='flex source-sans-3 text-lg text-justify'>
-                Since the whole project was only conducted only in one term (approximately 3 and a half 
-                months), we had to work efficiently to complete the project. But, the fact is, the project 
+                Since the whole project was only conducted only in approximately 3 and a half 
+                months (one term), we had to work efficiently to complete the project. But, the fact is, the project 
                 will never be completed. I believe that having the mindset of making the products as “good 
                 enough” allows me to ground myself more with the process, because of the infinite 
                 capabilities of iterating the design through and through to make it a much better version 
