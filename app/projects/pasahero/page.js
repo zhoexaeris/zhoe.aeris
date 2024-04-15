@@ -33,32 +33,32 @@ function page() {
         <div className='bg-[#F9F5F6] px-7 lg:px-64'>
             <div className='pt-20 pb-10' id="body">
                 <div className='quicksand items-center justify-center flex flex-col bg-[#FFEECC] rounded-xl '>
-                    <div className='text-center text-5xl quicksand font-bold pt-10 pb-5'>
+                    <div className='text-center xl:text-5xl quicksand font-bold pt-10 pb-5 text-4xl'>
                         The Problem
                     </div>
-                    <div className='text-justify quicksand font-medium text-3xl px-10 pb-10'>
+                    <div className='text-justify quicksand font-medium lg:text-3xl px-10 pb-10 text-xl'>
                     <b>Public transportation in Metro Manila</b>, particularly the bus and jeepney routes, 
                     can be <b>overwhelming</b> for newcomers. How can we assist them by providing <b>accurate 
                     route information</b> and helping them <b>plan their commute</b> according to their specific needs?
                     </div>
                 </div>
             </div>
-            <div className='flex text-center'>
-                    <div className='flex-1'>
-                        <div className='text-4xl quicksand font-bold'>
+            <div className='xl:flex text-center'>
+                    <div className='flex-1 px-10'>
+                        <div className='lg:text-4xl quicksand font-bold text-3xl'>
                             Goal
                         </div>
-                        <p className='text-justify text-2xl font-regular source-sans-3 py-2'>
+                        <p className='text-justify text-xl font-regular source-sans-3 py-2'>
                         Create an <b>application</b> for commuters to <b>plan and share personalized routes</b> within Metro 
                         Manila using current information, <b>get news and reports</b> about surrounding routes, and 
                         <b>download routes</b> for offline use.
                         </p>
                     </div>
                     <div className='flex-1 px-10'>
-                        <div className='text-4xl quicksand font-bold'>
+                        <div className='lg:text-4xl quicksand font-bold text-3xl'>
                             Role
                         </div>
-                        <p className='text-justify text-2xl font-regular source-sans-3 py-2'>
+                        <p className='text-justify text-xl font-regular source-sans-3 py-2'>
                         As the lead designer, I created the <b>visual design</b> and <b>user interactions</b>, including the  
                         <b> logo</b>, <b>wireframes</b>, and <b>prototypes</b>. I also participated in the needfinding study and 
                         conducted user interviews.
@@ -141,7 +141,7 @@ function page() {
                 <div className='h-screen'>
                   <iframe className="w-full h-full" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FaWjgyUScRvZJFJVpY8sRyq%2FPasaHERO%3Ftype%3Ddesign%26node-id%3D597-21908%26t%3DgaqOoEQwtELfdlrE-1%26scaling%3Dscale-down%26page-id%3D597%253A17170%26starting-point-node-id%3D597%253A21908%26show-proto-sidebar%3D1%26mode%3Ddesign" allowfullscreen></iframe>
                 </div>
-                <div className='quicksand text-center font-bold text-2xl h-40 items-center justify-center flex bg-[#FFEECC] rounded-xl mx-10 my-10'>
+                <div className='quicksand text-center font-bold text-2xl h-40 items-center justify-center flex bg-[#FFEECC] rounded-xl mx-10 my-10 px-5'>
                     “Prioritize serving the people, not own desires”
                 </div>
                 <div className='text-4xl quicksand font-bold pb-2 pt-10'>
@@ -182,7 +182,7 @@ function page() {
                     will come to a breeze.
                     </div>
                 </div>
-                <div className='quicksand text-center font-bold text-2xl h-40 items-center justify-center flex bg-[#FFEECC] rounded-xl mx-10 my-10'>
+                <div className='quicksand text-center font-bold text-2xl h-40 items-center justify-center flex bg-[#FFEECC] rounded-xl mx-10 my-10 px-5'>
                     “It will never be perfect, just good enough.”
                 </div>
                 <div className='text-2xl source-sans-3 font-bold pt-3'>
