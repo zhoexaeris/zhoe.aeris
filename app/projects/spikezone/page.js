@@ -6,7 +6,7 @@ import Navbar from '../../mainComponents/Navbar.js'
 import Footer from '../../mainComponents/Footer.js'
 
 function page() {
-  const gamepadIcon = <FontAwesomeIcon icon={faGamepad} className="w-40 h-40"/>
+  const gamepadIcon = <FontAwesomeIcon icon={faGamepad} className="w-20 h-20 lg:w-40 lg:h-40"/>
   const github = <FontAwesomeIcon icon={faGithub} className="w-5 h-5"/>
   return (
     <div className='text-[#523231]'>

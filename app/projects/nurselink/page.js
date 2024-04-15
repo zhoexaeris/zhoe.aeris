@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHeartPulse } from '@fortawesome/free-solid-svg-icons';
 
 function page() {
-  const heartIcon = <FontAwesomeIcon icon={faHeartPulse} className="w-40 h-40"/>
+  const heartIcon = <FontAwesomeIcon icon={faHeartPulse} className="w-20 h-20 lg:w-40 lg:h-40"/>
   return (
     <div className='text-[#523231]'>
       <div className="bg-red w-full ">
