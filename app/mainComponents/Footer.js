@@ -15,7 +15,7 @@ const Footer = ({color}) => {
         <br />
         <ul className='flex justify-center py-1'>
             <li className='text-[#9F6361] px-1'><a href="https://www.linkedin.com/in/zhoeaeris/" target="_blank">{linkedIn}</a></li>
-            <li className='text-[#9F6361] px-1'><a href="/" target="_blank">{email}</a></li>
+            <li className='text-[#9F6361] px-1'><a href="mailto:zhoe.aeris@gmail.com" target="_blank">{email}</a></li>
             <li className='text-[#9F6361] px-1'><a href="https://www.github.com/zhoexaeris/" target="_blank">{github}</a></li>
         </ul>
         </footer>

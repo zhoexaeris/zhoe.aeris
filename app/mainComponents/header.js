@@ -32,9 +32,10 @@ const Header = ({color}) => {
         </div>
         <div className='lg:py-2 pt-2 opacity-0 animate-fade-in-delayed'>
             <ul className='font-semibold items-center justify-center lg:justify-start flex'>
-                    <li className=''><a href={"/" } target="_blank">{githubIcon}</a></li>
-                    <li className='pl-5'><a href={"/" } target="_blank">{linkedinIcon}</a></li>
-                    <li className='pl-5'><a href={"/" } target="_blank">{emailIcon}</a></li>
+                    <li className=''><a href={"https://www.linkedin.com/in/zhoeaeris/" } target="_blank">{linkedinIcon}</a></li>
+                    <li className='pl-5'><a href={"mailto:zhoe.aeris@gmail.com" } target="_blank">{emailIcon}</a></li>
+                    <li className='pl-5'><a href={"https://github.com/zhoexaeris" } target="_blank">{githubIcon}</a></li>
+                    
             </ul>
         </div>
       </div>
