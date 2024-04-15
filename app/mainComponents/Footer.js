@@ -10,7 +10,7 @@ const Footer = ({color}) => {
     const github = <FontAwesomeIcon icon={faGithub} className="w-5 h-5"/>
 
     return (
-        <footer className={`source-sans-3 py-2 w-full text-center ${color} text-[#9F6361]`}>
+        <footer className={`source-sans-3 py-2 w-full text-center ${color} text-[#523231]`}>
         Designed and coded by Zhoe Aeris
         <br />
         <ul className='flex justify-center py-1'>

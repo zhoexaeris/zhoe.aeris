@@ -80,6 +80,9 @@ function page() {
                 in the Philippines to share their unique experiences in the field, get new job opportunities, and connect 
                 with their peers.
                 </div>
+                <div className='w-full flex justify-center items-center pt-10'>
+                    <img src="../../../images/nurselink/idea.png" className='w-full'/>
+                </div>
                 <div className='text-5xl quicksand font-bold pt-24'>
                     The Process
                 </div>
