@@ -8,7 +8,7 @@ import { faBusSimple } from '@fortawesome/free-solid-svg-icons';
 function page() {
   const busIcon = <FontAwesomeIcon icon={faBusSimple} className="w-20 h-20 lg:w-40 lg:h-40"/>
   return (
-    <div className='bg-yellow text-[#523231]'>
+    <div className='text-[#523231]'>
         <div className="bg-red w-full ">
             <Navbar color="bg-[#FFEECC]" />
         </div>
