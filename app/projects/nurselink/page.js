@@ -30,14 +30,13 @@ function page() {
             </div>
         </div>
         <div className='bg-[#F9F5F6] px-7 lg:px-64'>
-            <div className='pt-20 pb-10' id="body">
-                <div className='quicksand items-center justify-center flex flex-col bg-[#beebf0] rounded-xl '>
+            <div className='pt-10 pb-10' id="body">
+                <div className='quicksand items-center justify-center flex flex-col bg-[#beebf0] rounded-xl'>
                     <div className='text-center xl:text-5xl quicksand font-bold pt-10 pb-5 text-4xl'>
                         The Problem
                     </div>
                     <div className='text-justify quicksand font-medium lg:text-3xl px-10 pb-10 text-xl'>
-                    The Philippines is known for producing many healthcare professionals, especially nurses. These 
-                    professionals contribute significantly both within the country and around the world. A large number 
+                    The Philippines is known for producing many healthcare professionals, especially nurses. A large number 
                     of them look for opportunities overseas, resulting in fierce competition in the healthcare industry, 
                     both domestically and internationally. However, there is no dedicated job search and resume listing 
                     platform for nurses in the Philippines.
