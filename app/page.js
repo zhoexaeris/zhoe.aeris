@@ -8,7 +8,7 @@ export default function Home() {
       <div className="bg-red w-full">
         <Navbar color="bg-[#E7CBCB]" />
       </div>
-      <div className="body">
+      <div className="body ">
         <Header color="bg-[#E7CBCB]" className ="h-screen"/>
       </div>
       <div>
