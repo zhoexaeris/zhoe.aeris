@@ -56,7 +56,7 @@ function page() {
 
             Currently, I am on the lookout for <b>internship opportunities</b> that will allow me to <b>further explore UI/UX and web 
             development</b>, and I am excited about the possibilities that lie ahead. If you know of any opportunities or just want
-            to chat about all things tech, <span className='hover:text-red hover:cursor-pointer font-bold text-[#D88080] underline'>I'd love to connect!</span>
+            to chat about all things tech, <span className='hover:text-red hover:cursor-pointer font-bold text-[#D88080] underline'>I would love to connect!</span>
             </div>
             <div className='text-5xl quicksand font-bold pt-24 pb-5'>
                 Skills
