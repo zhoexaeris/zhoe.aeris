@@ -40,7 +40,7 @@ function page() {
 const projectCardData = [
     {
         id: 1,
-        imgUrl:"/images/pasahero/card-mockup.png",
+        imgUrl:"/images/pasahero/card-mockup-phone.png",
         title: "PasaHero",
         description: "An app that redefines Metro Manila’s commuting experience, making daily journeys stress-free and efficient.",
         tags: ["Transportation", "UI/UX Design"],
