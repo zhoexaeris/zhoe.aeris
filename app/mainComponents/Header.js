@@ -20,7 +20,7 @@ const Header = () => {
   return (
     <div>
       <h1 className="text-4xl font-extrabold text-[#231F20] mb-6">
-        Hi I'm Zhoe, a{" "}
+        Hi I&apos;m Zhoe, a{" "}
         <span className="bg-gradient-to-r from-pink-500 to-orange-400 bg-clip-text text-transparent">
           UI/UX Designer
         </span>
@@ -32,8 +32,8 @@ const Header = () => {
         user-centered digital products.
       </h1>
       <p className="text-lg md:text-xl text-[#231F20] mb-8 max-w-3xl">
-        Currently, I'm open to new opportunities as I complete my senior year at
-        Computer Science at De La Salle University Manila.
+        Currently, I&apos;m open to new opportunities as I complete my senior
+        year at Computer Science at De La Salle University Manila.
       </p>
       <div className="flex space-x-4 mt-2">
         <a
