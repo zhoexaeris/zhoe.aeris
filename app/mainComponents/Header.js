@@ -1,49 +1,77 @@
-"use client"
-import React from 'react'
-import { TypeAnimation } from 'react-type-animation'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub }  from '@fortawesome/free-brands-svg-icons';
-import { faLinkedin }  from '@fortawesome/free-brands-svg-icons';
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+"use client";
+import React, { useState, useEffect } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
-const Tagline = () => {
+const words = ["build", "launch", "iterate"];
+
+const Header = () => {
+  const [currentWordIndex, setCurrentWordIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentWordIndex((prev) => (prev + 1) % words.length);
+    }, 1000);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
-     <TypeAnimation
-      cursor={true}
-      sequence={['aspiring UI/UX Designer from De La Salle University Manila.', 2000]}
-      repeat={Infinity}
-      className='lg:text-left'
-    />
-  )
-}
-
-const Header = ({color}) => {
-  const githubIcon = <FontAwesomeIcon icon={faGithub} className="w-9 h-9"/>
-  const linkedinIcon = <FontAwesomeIcon icon={faLinkedin} className="w-9 h-9"/>
-  const emailIcon = <FontAwesomeIcon icon={faEnvelope} className="w-9 h-9"/>
-  return (
-    <section className={`flex flex-col flex-wrap w-full h-screen items-center justify-center lg:flex-row lg:px-64 text-[#D88080] bg-[#E7CBCB]`}>
-      <div className='lg:flex-1 w-full items-center text-center lg:pl-32'>
-        <div className='quicksand font-extrabold text-5xl lg:text-left lg:px-0'>
-            Hi, I am <span className='text-[#9F6361]'>Zhoe Aeris</span>
-        </div> 
-        <div className='text-xl lg:text-left py-2'>
-            An <Tagline />
-        </div>
-        <div className='lg:py-2 pt-2 opacity-0 animate-fade-in-delayed'>
-            <ul className='font-semibold items-center justify-center lg:justify-start flex'>
-                    <li className=''><a href={"https://www.linkedin.com/in/zhoeaeris/" } target="_blank">{linkedinIcon}</a></li>
-                    <li className='pl-5'><a href={"mailto:zhoe.aeris@gmail.com" } target="_blank">{emailIcon}</a></li>
-                    <li className='pl-5'><a href={"https://github.com/zhoexaeris" } target="_blank">{githubIcon}</a></li>
-                    
-            </ul>
-        </div>
+    <div>
+      <h1 className="text-4xl font-extrabold text-[#231F20] mb-6">
+        Hi I'm Zhoe, a{" "}
+        <span className="bg-gradient-to-r from-pink-500 to-orange-400 bg-clip-text text-transparent">
+          UI/UX Designer
+        </span>
+        , helping startups
+        <br />
+        <span className="transition-all duration-300 inline-block min-w-[4ch] bg-yellow px-2 py-1 rounded-md">
+          {words[currentWordIndex]}
+        </span>{" "}
+        user-centered digital products.
+      </h1>
+      <p className="text-lg md:text-xl text-[#231F20] mb-8 max-w-3xl">
+        Currently, I'm open to new opportunities as I complete my senior year at
+        Computer Science at De La Salle University Manila.
+      </p>
+      <div className="flex space-x-4 mt-2">
+        <a
+          href="https://www.linkedin.com/in/zhoeaeris/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="rounded-md p-1 flex items-center justify-center"
+          aria-label="LinkedIn"
+        >
+          <FontAwesomeIcon
+            icon={faLinkedin}
+            className="w-6 h-6 text-[#231F20]"
+          />
+        </a>
+        <a
+          href="mailto:zhoe.aeris@gmail.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="rounded-md p-1 flex items-center justify-center"
+          aria-label="Email"
+        >
+          <FontAwesomeIcon
+            icon={faEnvelope}
+            className="w-6 h-6 text-[#231F20]"
+          />
+        </a>
+        <a
+          href="https://github.com/zhoexaeris"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center justify-center"
+          aria-label="GitHub"
+        >
+          <FontAwesomeIcon icon={faGithub} className="w-6 h-6 text-[#231F20]" />
+        </a>
       </div>
-      <div className='flex lg:w-1/2 items-center justify-center py-5'>
-        <img src="images/me.jpg" className='w-64 rounded-full shadow-3xl lg:w-96 sm:w-1/2'/>
-      </div>
-    </section>
-  )
-}
+    </div>
+  );
+};
 
-export default Header
+export default Header;
