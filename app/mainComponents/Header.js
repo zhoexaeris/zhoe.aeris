@@ -26,7 +26,7 @@ const Header = () => {
         </span>
         , helping startups
         <br />
-        <span className="transition-all duration-300 inline-block min-w-[4ch] bg-yellow px-2 py-1 rounded-md">
+        <span className="transition-all duration-300 inline-block min-w-[4ch] bg-pink-500 text-white px-2 py-1 rounded-md">
           {words[currentWordIndex]}
         </span>{" "}
         user-centered digital products.
