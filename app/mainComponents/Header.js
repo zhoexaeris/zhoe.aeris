@@ -5,7 +5,7 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
-const words = ["fast", "responsive", "user-friendly"];
+const words = ["detailed", "fast", "responsive"];
 
 const Header = () => {
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
