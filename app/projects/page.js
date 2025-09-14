@@ -5,7 +5,7 @@ export default function Home() {
     <main className="min-h-screen bg-[#F9F6F5] flex flex-col">
       <Navbar color="bg-[#F9F6F5]" />
       <div className="w-full max-w-4xl mx-auto px-4 flex-1 flex flex-col justify-center">
-        This is the About page
+        This is the projects page
       </div>
     </main>
   );

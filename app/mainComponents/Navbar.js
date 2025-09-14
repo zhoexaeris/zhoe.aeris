@@ -8,19 +8,19 @@ const Navbar = ({ color }) => {
           className=" font-bold text-[#231F20]"
           style={{ fontFamily: "Inter, sans-serif" }}
         >
-          Home
+          <a href="/">Home</a>
         </div>
         <div
           className=" font-bold text-[#231F20]"
           style={{ fontFamily: "Inter, sans-serif" }}
         >
-          Projects
+          <a href="/projects">Projects</a>
         </div>
         <div
           className=" font-bold text-[#231F20]"
           style={{ fontFamily: "Inter, sans-serif" }}
         >
-          About
+          <a href="/about">About</a>
         </div>
         <div
           className=" font-bold text-[#231F20]"
