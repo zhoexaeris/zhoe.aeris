@@ -27,7 +27,7 @@ module.exports = {
         red: "#FFC0C4",
         "dark-red": "#EDACB1",
         "text-red": "#9E6D70",
-        "serbiz-purple": "#D265D8",
+        "serbiz-purple": "#DB16CE",
         "nurselink-teal": "#0D9488",
         "spikezone-red": "#B91C1C",
       },

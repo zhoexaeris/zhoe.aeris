@@ -9,7 +9,7 @@ export default function Home() {
     <main className="min-h-screen bg-[#F9F6F5] flex flex-col">
       <Navbar color="bg-[#F9F6F5]" />
 
-      <div className="flex flex-col gap-y-12">
+      <div className="flex flex-col gap-y-12 pt-8">
         {/* About Me */}
         <About />
 

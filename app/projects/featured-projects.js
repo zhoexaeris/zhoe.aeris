@@ -4,80 +4,72 @@ const FeaturedProjects = () => {
       id: 1,
       title: "Serbiz (Web)",
       description: "Lorem ipsum. This is the project description.",
-      technologies: "React, Node.js, MongoDB, Stripe API",
-      color: "bg-serbiz-purple",
-
-      image: "/images/serbiz/card-mockup.png",
+      bgColor: "bg-serbiz-purple",
+      textcolor: "text-white",
+      hovercolor: "hover:shadow-serbiz-purple/40",
+      image: "/images/certifications/sololearn-ruby.jpg",
     },
     {
       id: 2,
       title: "Nurselink",
       description:
         "A specialized job platform connecting healthcare professionals with hospitals and medical facilities.",
-      technologies: "React, Express.js, MySQL, JWT Auth",
-      color: "bg-nurselink-teal",
-      image: "/images/nurselink/card-mockup.png",
+      bgColor: "bg-nurselink-teal",
+      textcolor: "text-white",
+      hovercolor: "hover:shadow-nurselink-teal/40",
+      image: "/images/certifications/sololearn-ruby.jpg",
     },
     {
       id: 3,
       title: "SpikeZone",
       description:
         "A gaming community platform with forums, matchmaking, and tournament organization features.",
-      technologies: "Vue.js, Laravel, PostgreSQL, Socket.io",
-      color: "bg-spikezone-red",
-      image: "/images/spikezone/card-mockup.png",
+      bgColor: "bg-spikezone-red",
+      textcolor: "text-white",
+      hovercolor: "hover:shadow-spikezone-red/40",
+      image: "/images/certifications/sololearn-ruby.jpg",
     },
   ];
 
   return (
-    <div className="w-full max-w-6xl mx-auto">
+    <div className="space-y-8">
       {/* Header Section */}
-      <div className="text-xl md:text-2xl font-bold text-gray-900">
-        Featured Projects
-      </div>
-      <div className="text-lgmax-w-2xl">
-        A selection of my best works that turned ideas into measurable
-        successes.
+      <div className="space-y-1">
+        <h2 className="text-xl font-semibold">Website Development Projects</h2>
+        <p className="text-gray-600 text-sm">
+          Visual designs, UX researches, and anything in between.
+        </p>
       </div>
 
-      {/* Project Cards */}
-      <div className="space-y-8 my-8">
+      {/* Project List */}
+      <div className="space-y-6">
         {projects.map((project) => (
           <div
             key={project.id}
-            className={`${project.color} rounded-2xl overflow-hidden shadow-2xl`}
+            className={`flex flex-col lg:flex-row rounded-2xl overflow-hidden transition-all duration-300 ease-in-out transform hover:scale-[1.01] hover:shadow-lg group ${project.bgColor} ${project.hovercolor}`}
           >
-            <div className="flex flex-col lg:flex-row min-h-[400px]">
-              {/* Left Section - Text Content */}
-              <div className="flex-1 p-8 lg:p-12 flex flex-col justify-between">
-                <div>
-                  <h3 className="text-xl lg:text-2xl font-bold text-white mb-4">
-                    {project.title}
-                  </h3>
-                  <p className="text-lg text-white/90 mb-6 leading-relaxed">
-                    {project.description}
-                  </p>
-                </div>
-                <div className="text-sm text-white/80">
-                  <span className="font-medium">Technologies:</span>{" "}
-                  {project.technologies}
-                </div>
+            {/* Left Section - Text */}
+            <div
+              className={`flex-1 p-6 lg:p-8 flex flex-col justify-between ${project.textcolor}`}
+            >
+              <div>
+                <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
+                <p className="text-sm leading-snug text-white/80">
+                  {project.description}
+                </p>
               </div>
+              <span className="text-xs text-white/60 mt-4">
+                {new Date().getFullYear()}
+              </span>
+            </div>
 
-              {/* Right Section - Visual Content */}
-              <div className="flex-1 p-8 lg:p-12 flex flex-col justify-between relative">
-                {/* Project Screenshot */}
-                <div className="flex justify-center items-center flex-1">
-                  <div className="relative">
-                    <img
-                      src={project.image}
-                      alt={`${project.title} screenshot`}
-                      className="max-w-full h-auto rounded-lg shadow-lg"
-                      style={{ maxHeight: "300px" }}
-                    />
-                  </div>
-                </div>
-              </div>
+            {/* Right Section - Image */}
+            <div className="flex-1 flex items-center justify-center bg-white p-6 lg:p-8">
+              <img
+                src={project.image}
+                alt={`${project.title} preview`}
+                className="w-full max-w-sm rounded-xl shadow-md object-cover"
+              />
             </div>
           </div>
         ))}
