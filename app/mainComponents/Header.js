@@ -5,7 +5,7 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
-const words = ["build", "launch", "iterate"];
+const words = ["fast", "responsive", "user-friendly"];
 
 const Header = () => {
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
@@ -22,14 +22,13 @@ const Header = () => {
       <h1 className="text-4xl font-extrabold text-[#231F20] mb-6">
         Hi I&apos;m Zhoe, a{" "}
         <span className="bg-gradient-to-r from-pink-500 to-orange-400 bg-clip-text text-transparent">
-          UI/UX Designer
+          Frontend Developer
         </span>
-        , helping startups
-        <br />
-        <span className="transition-all duration-300 inline-block min-w-[4ch] bg-pink-500 text-white px-2 py-1 rounded-md">
+        , passionate about building
+        <span className="transition-all duration-300 inline-block min-w-[2ch] bg-pink-500 text-white px-2 py-1 rounded-md text-center ml-2">
           {words[currentWordIndex]}
         </span>{" "}
-        user-centered digital products.
+        websites.
       </h1>
       <p className="text-lg md:text-xl text-[#231F20] mb-8 max-w-3xl">
         Currently, I&apos;m open to new opportunities as I complete my senior
