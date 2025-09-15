@@ -5,24 +5,38 @@ const DesignProjects = () => {
   const originalProjects = [
     {
       id: 1,
-      title: "Title 1",
+      title: "BloomPH",
       description: "Short description",
-      image: "/images/other-projects/1.jpg",
+      image: "./images/design-projects/bloomph.png",
       link: "https://working.dev",
     },
     {
       id: 2,
-      title: "Title 2",
+      title: "The OFW Blog",
       description: "Short description",
-      image: "/images/other-projects/2.jpg",
+      image: "./images/design-projects/theofwblog.png",
       link: "https://example.com",
     },
     {
       id: 3,
-      title: "Title 3",
+      title: "PasaHero",
       description: "Short description",
-      image: "/images/other-projects/3.jpg",
-      link: "https://example.com",
+      image: "./images/design-projects/pasahero.png",
+      link: "",
+    },
+    {
+      id: 4,
+      title: "PediPlan",
+      description: "Short description",
+      image: "./images/design-projects/pediplan.png",
+      link: "https://www.canva.com/design/DAGH-z03DXQ/OLAcbkhuVHyzyMjTEi31TQ/view?utm_content=DAGH-z03DXQ&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h9f438c01f6",
+    },
+    {
+      id: 5,
+      title: "Pamana",
+      description: "Short description",
+      image: "./images/design-projects/pamana.png",
+      link: "",
     },
   ];
 

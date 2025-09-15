@@ -9,7 +9,7 @@ const MobileProjects = () => {
       date: "2024",
       link: "#",
       linkLabel: "Pitch Deck",
-      image: "/images/pasahero/card-mockup-phone.png",
+      image: "./images/mobile-projects/daily.png",
       bgcolor: "bg-[#AEB77A]",
     },
     {
@@ -21,7 +21,7 @@ const MobileProjects = () => {
       date: "2024",
       link: "#",
       linkLabel: "Pitch Deck",
-      image: "/images/pasahero/card-mockup-phone.png",
+      image: "./images/mobile-projects/serbiz_app.png",
       bgcolor: "bg-[#D265D8]",
     },
     {
@@ -33,7 +33,7 @@ const MobileProjects = () => {
       date: "2025",
       link: "#",
       linkLabel: "Pitch Deck",
-      image: "/images/pasahero/card-mockup-phone.png",
+      image: "./images/mobile-projects/declutterph.png",
       bgcolor: "bg-[#EDBE2C]",
     },
   ];
@@ -52,9 +52,13 @@ const MobileProjects = () => {
       {/* Cards */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {projects.map((project) => (
-          <div
+          <a
             key={project.id}
-            className={`rounded-2xl overflow-hidden ${project.bgcolor} text-white transition-all duration-200 transform hover:scale-[1.01]`}
+            href={project.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={`group rounded-2xl overflow-hidden ${project.bgcolor} text-white transition-all duration-200 transform hover:-translate-y-1 hover:shadow-lg hover:brightness-[1.05] cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-white/70`}
+            aria-label={`${project.title} — open external link`}
           >
             <div className="p-6 flex flex-col h-full">
               {/* Top: Text */}
@@ -69,17 +73,6 @@ const MobileProjects = () => {
                 <p className="text-white/90 text-sm mt-2 leading-snug">
                   {project.description}
                 </p>
-
-                <div className="mt-4 text-sm text-white">
-                  <a
-                    href={project.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="hover:underline"
-                  >
-                    {project.linkLabel || "External Link"}
-                  </a>
-                </div>
               </div>
 
               {/* Bottom: Image */}
@@ -91,7 +84,7 @@ const MobileProjects = () => {
                 />
               </div>
             </div>
-          </div>
+          </a>
         ))}
       </div>
     </div>

@@ -17,7 +17,7 @@ const WebdevProjects = () => {
       bgColor: "bg-serbiz-purple",
       textcolor: "text-white",
       hovercolor: "hover:shadow-serbiz-purple/40",
-      image: "/images/certifications/sololearn-ruby.jpg",
+      image: "./images/webdev-projects/serbiz_web.png",
     },
     {
       id: 2,
@@ -43,7 +43,7 @@ const WebdevProjects = () => {
       bgColor: "bg-nurselink-teal",
       textcolor: "text-white",
       hovercolor: "hover:shadow-nurselink-teal/40",
-      image: "/images/certifications/sololearn-ruby.jpg",
+      image: "./images/webdev-projects/nurselink.png",
     },
     {
       id: 3,
@@ -73,7 +73,7 @@ const WebdevProjects = () => {
       bgColor: "bg-spikezone-red",
       textcolor: "text-white",
       hovercolor: "hover:shadow-spikezone-red/40",
-      image: "/images/certifications/sololearn-ruby.jpg",
+      image: "./images/webdev-projects/spikezone.png",
     },
   ];
 
