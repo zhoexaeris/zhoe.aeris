@@ -1,4 +1,4 @@
-const FeaturedProjects = () => {
+const WebdevProjects = () => {
   const projects = [
     {
       id: 1,
@@ -180,4 +180,4 @@ const FeaturedProjects = () => {
   );
 };
 
-export default FeaturedProjects;
+export default WebdevProjects;

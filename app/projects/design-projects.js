@@ -1,7 +1,7 @@
 "use client";
 import React, { useState, useRef, useEffect } from "react";
 
-const OtherProjects = () => {
+const DesignProjects = () => {
   const originalProjects = [
     {
       id: 1,
@@ -83,7 +83,7 @@ const OtherProjects = () => {
     <div className="">
       {/* Header */}
       <div className="space-y-1">
-        <h2 className="text-xl font-semibold">Other Projects</h2>
+        <h2 className="text-xl font-semibold">Design Projects</h2>
         <p className="text-gray-600 text-sm">
           Visual designs, UX researches, and anything in between.
         </p>
@@ -147,4 +147,4 @@ const OtherProjects = () => {
   );
 };
 
-export default OtherProjects;
+export default DesignProjects;
