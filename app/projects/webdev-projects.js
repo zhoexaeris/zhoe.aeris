@@ -3,7 +3,7 @@ const WebdevProjects = () => {
     {
       id: 1,
       title: "Serbiz (Web)",
-      role: "Founding Team – Product & Technology Lead",
+      role: "Founding Product & Technology Lead",
       date: "2024",
       summary:
         "Created Serbiz PH’s official marketing site to build brand presence before launch, including a launch waitlist system and V1–V2 redesigns.",
