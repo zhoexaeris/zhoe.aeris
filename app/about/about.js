@@ -67,12 +67,12 @@ const About = () => {
 
           {/* Text */}
           <div className="ml-4">
-            <h1 className="text-xl font-semibold text-[#F84B82]">
+            <h1 className="text-lg font-semibold text-[#F84B82]">
               Hi, I am Zhoe.
             </h1>
             {/* optional tiny tagline */}
             {/* <p className="text-xs text-gray-500 mt-1">Designer • Web Developer</p> */}
-            <p className="mt-2 leading-relaxed text-gray-700">
+            <p className="mt-2 leading-relaxed text-sm text-gray-700">
               Lorem ipsum. This is the about me section. I believe that{" "}
               <b>love is at the heart of all meaningful endeavors</b>. With that
               in mind, I am on a mission to <b>continue learning</b> and{" "}

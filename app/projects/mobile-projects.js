@@ -42,7 +42,7 @@ const MobileProjects = () => {
     <div className="space-y-8">
       {/* Header */}
       <div className="space-y-1">
-        <h2 className="text-xl font-semibold text-[#F84B82]">
+        <h2 className="text-lg font-semibold text-[#F84B82]">
           Mobile Development Projects
         </h2>
         <p className="text-gray-600 text-sm">
@@ -65,7 +65,7 @@ const MobileProjects = () => {
             <div className="p-6 flex flex-col h-full">
               {/* Top: Text */}
               <div className="flex-1">
-                <h3 className="text-xl font-semibold">{project.title}</h3>
+                <h3 className="text-lg font-semibold">{project.title}</h3>
                 {project.role && (
                   <p className="text-white/90 text-sm mt-1">{project.role}</p>
                 )}

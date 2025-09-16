@@ -26,11 +26,11 @@ const Certifications = () => {
 
   return (
     <div className="w-full max-w-4xl mx-auto px-4 flex-1 flex flex-col gap-y-3 pb-8">
-      <h2 className="text-xl font-bold">Others</h2>
+      <h2 className="text-lg font-bold">Others</h2>
 
       {/* Certifications */}
       <div className="space-y-4">
-        <h3 className="text-lg font-bold text-[#F84B82]">Certifications</h3>
+        <h3 className="text-base font-bold text-[#F84B82]">Certifications</h3>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           {certifications.map((cert, index) => (

@@ -24,7 +24,7 @@ const Experiences = () => {
   return (
     <section className="w-full max-w-4xl px-4 mx-auto flex flex-col gap-y-3">
       {/* Section Header */}
-      <h2 className="text-2xl font-semibold border-b border-gray-200 pb-3">
+      <h2 className="text-lg font-semibold border-b border-gray-200 pb-3">
         Experiences
       </h2>
 
@@ -36,11 +36,11 @@ const Experiences = () => {
 
             {/* Experience Content */}
             <div className="space-y-2">
-              <h3 className="text-lg font-bold text-[#F84B82]">
+              <h3 className="text-base font-bold text-[#F84B82]">
                 {experience.name}
               </h3>
               <p className="text-sm text-gray-600 italic">{experience.date}</p>
-              <ul className="list-disc space-y-1 text-gray-700 list-outside pl-4">
+              <ul className="list-disc space-y-1 text-sm text-gray-700 list-outside pl-4">
                 {experience.description.map((item, idx) => (
                   <li key={idx} className="leading-relaxed">
                     {item}

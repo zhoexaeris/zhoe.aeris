@@ -81,7 +81,7 @@ const WebdevProjects = () => {
     <div className="space-y-8">
       {/* Header Section */}
       <div className="space-y-1">
-        <h2 className="text-xl font-semibold text-[#F84B82]">
+        <h2 className="text-lg font-semibold text-[#F84B82]">
           Website Development Projects
         </h2>
         <p className="text-gray-600 text-sm">
@@ -100,7 +100,7 @@ const WebdevProjects = () => {
             <div
               className={`flex-1 p-4 sm:p-6 lg:p-10 max-w-full lg:max-w-md bg-gradient-to-b from-white to-gray-50 border-l-4 ${project.borderColor}`}
             >
-              <h3 className="text-xl font-bold mb-2">{project.title}</h3>
+              <h3 className="text-lg font-bold mb-2">{project.title}</h3>
               {project.role && (
                 <p className="text-xs sm:text-sm text-gray-500 italic ">
                   {project.role} • {project.date}

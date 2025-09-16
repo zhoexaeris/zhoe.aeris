@@ -97,7 +97,7 @@ const DesignProjects = () => {
     <div className="">
       {/* Header */}
       <div className="space-y-1">
-        <h2 className="text-xl font-semibold text-[#F84B82]">
+        <h2 className="text-lg font-semibold text-[#F84B82]">
           Design Projects
         </h2>
         <p className="text-gray-600 text-sm">
@@ -156,7 +156,7 @@ const DesignProjects = () => {
             href={originalProjects[activeIndex % originalLength].link}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-sm font-semibold text-blue-600 hover:underline flex items-center gap-1 text-[#F84B82]"
+            className="text-sm font-semibold text-[#F84B82] hover:underline flex items-center gap-1"
           >
             {originalProjects[activeIndex % originalLength].title} →
           </a>

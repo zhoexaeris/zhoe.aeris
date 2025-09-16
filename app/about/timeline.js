@@ -48,7 +48,7 @@ const Journey = () => {
   return (
     <section className="w-full max-w-4xl px-4 mx-auto flex flex-col gap-y-4">
       {/* Section Header */}
-      <h2 className="text-2xl font-semibold border-b border-gray-200 pb-3">
+      <h2 className="text-lg font-semibold border-b border-gray-200 pb-3">
         My Journey
       </h2>
 
@@ -61,7 +61,7 @@ const Journey = () => {
             {/* Content */}
             <div className="space-y-2">
               <div className="flex items-center gap-3">
-                <h3 className="text-lg font-bold text-[#F84B82]">
+                <h3 className="text-base font-bold text-[#F84B82]">
                   {item.title}
                 </h3>
                 <div className="bg-gray-200 text-gray-600 px-2 py-1 rounded-md text-xs font-medium">
@@ -69,7 +69,7 @@ const Journey = () => {
                 </div>
               </div>
 
-              <ul className="list-disc list-outside space-y-1 text-gray-700 pl-4">
+              <ul className="list-disc list-outside space-y-1 text-sm text-gray-700 pl-4">
                 {item.details.map((detail, idx) => (
                   <li key={idx} className="leading-relaxed">
                     {detail}
