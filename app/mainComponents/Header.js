@@ -38,7 +38,7 @@ const Header = () => {
         href="mailto:zhoe.aeris@gmail.com"
         className="inline-block bg-[#F84B82] text-white px-6 py-3 rounded-lg font-medium hover:shadow-lg hover:brightness-[1.05] hover:scale-[1.01] transition-all duration-100 transform"
       >
-        <p className="text-sm">Let's Work Together</p>
+        <p className="text-sm">Let&apos;s Work Together</p>
       </a>
     </div>
   );

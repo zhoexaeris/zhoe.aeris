@@ -133,7 +133,7 @@ const DesignProjects = () => {
                 opacity: absOffset > 2 ? 0 : 1,
               }}
             >
-              <img
+              <Image
                 src={project.image}
                 alt={project.title}
                 className="w-full h-full object-cover"
