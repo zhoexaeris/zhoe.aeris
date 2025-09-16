@@ -1,5 +1,6 @@
 "use client";
 import React, { useState, useRef, useEffect } from "react";
+import Image from "next/image";
 
 const DesignProjects = () => {
   const originalProjects = [
@@ -7,35 +8,35 @@ const DesignProjects = () => {
       id: 1,
       title: "BloomPH",
       description: "Social Media Campaign",
-      image: "./images/design-projects/bloomph.png",
+      image: "/images/design-projects/bloomph.png",
       link: "https://www.canva.com/design/DAE3QQkbtWI/pat5PusqE-kYUpLQfZ5hUg/view?utm_content=DAE3QQkbtWI&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h30cfe319ca",
     },
     {
       id: 2,
       title: "The OFW Blog",
       description: "Full Website Prototype",
-      image: "./images/design-projects/theofwblog.png",
+      image: "/images/design-projects/theofwblog.png",
       link: "https://www.figma.com/proto/trqip2hrybpu5R9L7QqUjL/GEWORLD-Case-Analysis?page-id=10%3A1103&node-id=204-212&p=f&viewport=412%2C54%2C0.02&t=GxT73PlA0oiTDOry-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=204%3A212",
     },
     {
       id: 3,
       title: "PasaHero",
       description: "UX Research",
-      image: "./images/design-projects/pasahero.png",
+      image: "/images/design-projects/pasahero.png",
       link: "https://www.figma.com/proto/aWjgyUScRvZJFJVpY8sRyq/PasaHERO?page-id=597%3A17170&node-id=597-21908&p=f&viewport=581%2C257%2C0.05&t=ybEhiL9HjjBXVbwf-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=597%3A21908&show-proto-sidebar=1",
     },
     {
       id: 4,
       title: "PediPlan",
       description: "UX Internship Project",
-      image: "./images/design-projects/pediplan.png",
+      image: "/images/design-projects/pediplan.png",
       link: "https://www.canva.com/design/DAGH-z03DXQ/OLAcbkhuVHyzyMjTEi31TQ/view?utm_content=DAGH-z03DXQ&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h9f438c01f6",
     },
     {
       id: 5,
       title: "Pamana",
       description: "Hackathon Project",
-      image: "./images/design-projects/pamana.png",
+      image: "/images/design-projects/pamana.png",
       link: "",
     },
   ];
@@ -137,6 +138,8 @@ const DesignProjects = () => {
                 src={project.image}
                 alt={project.title}
                 className="w-full h-full object-cover"
+                width={384}
+                height={340}
               />
             </div>
           );
