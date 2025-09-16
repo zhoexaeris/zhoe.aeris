@@ -3,9 +3,11 @@ import { useEffect, useState } from "react";
 
 const About = () => {
   const polaroids = [
-    "./images/about/1.jpg",
-    "./images/about/2.jpg",
-    "./images/about/3.jpg",
+    "./images/about/aizu-1.jpg",
+    "./images/about/aizu-2.jpg",
+    "./images/about/aizu-3.jpg",
+    "./images/about/aizu-4.jpg",
+    "./images/about/aizu-5.jpg",
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -48,7 +50,7 @@ const About = () => {
             {/* Polaroid overlay */}
             <div
               title="Click to change photo"
-              className={`absolute -bottom-3 -right-3 w-16 h-20 shadow-lg rounded-sm border-2 border-white cursor-pointer z-10 overflow-hidden transition-transform duration-75 ${
+              className={`absolute bottom-0 -right-2 w-14 h-16 shadow-lg rounded-sm border-2 border-b-8 border-white cursor-pointer z-10 overflow-hidden transition-transform duration-75 ${
                 isShaking ? "animate-[shake_0.5s_ease-in-out]" : "rotate-6"
               }`}
             >
