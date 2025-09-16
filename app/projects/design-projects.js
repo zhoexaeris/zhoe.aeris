@@ -27,7 +27,7 @@ const DesignProjects = () => {
     {
       id: 4,
       title: "PediPlan",
-      description: "Internship Project",
+      description: "UX Internship Project",
       image: "./images/design-projects/pediplan.png",
       link: "https://www.canva.com/design/DAGH-z03DXQ/OLAcbkhuVHyzyMjTEi31TQ/view?utm_content=DAGH-z03DXQ&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h9f438c01f6",
     },

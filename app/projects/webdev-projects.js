@@ -10,8 +10,7 @@ const WebdevProjects = () => {
       techStack: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Firebase"],
       contributions: [
         "Built and deployed the marketing website (V1 and V2).",
-        "Implemented launch waitlist functionality.",
-        "Optimized SEO and visibility using Google sitemaps.",
+        "Implemented launch waitlist functionality for V0.",
       ],
       links: [{ label: "Showcase", href: "#" }],
       bgColor: "bg-serbiz-purple",
@@ -34,8 +33,8 @@ const WebdevProjects = () => {
         "MongoDB + Mongoose",
       ],
       contributions: [
-        "Frontend: Developed Register/Login pages, Profile page, resume display, and verification progress bar using React components.",
-        "Backend: Extended nurse model & schema to support recommendations, created modal UI for peer recommendations, and updated routes/controllers.",
+        "Frontend: Developed Register/Login pages, Profile page, Resume Display, and Verification Progress Bar using React components.",
+        "Backend: Extended Nurse Model & Schema to support Recommendations, created modal UI for peer Recommendations, and updated routes/controllers.",
       ],
       links: [
         { label: "Live Demo", href: "https://nurse-link-one.vercel.app/" },
@@ -63,8 +62,8 @@ const WebdevProjects = () => {
         "Mongoose",
       ],
       contributions: [
-        "Developed frontend features: navbar, homepage, posts, profile updates, login system.",
-        "Implemented user authentication & password hashing.",
+        "Developed frontend features: Navbar, Homepage, Posts, Profile Updates, Login System.",
+        "Implemented User Authentication & Password Hashing.",
         "Set up MongoDB cloud database and deployed the application (locally).",
       ],
       links: [
