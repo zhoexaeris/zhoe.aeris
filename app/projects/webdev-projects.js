@@ -81,7 +81,9 @@ const WebdevProjects = () => {
     <div className="space-y-8">
       {/* Header Section */}
       <div className="space-y-1">
-        <h2 className="text-xl font-semibold">Website Development Projects</h2>
+        <h2 className="text-xl font-semibold text-[#F84B82]">
+          Website Development Projects
+        </h2>
         <p className="text-gray-600 text-sm">
           From UI to code, projects that blend design and development.
         </p>

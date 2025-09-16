@@ -42,7 +42,9 @@ const MobileProjects = () => {
     <div className="space-y-8">
       {/* Header */}
       <div className="space-y-1">
-        <h2 className="text-xl font-semibold">Mobile Development Projects</h2>
+        <h2 className="text-xl font-semibold text-[#F84B82]">
+          Mobile Development Projects
+        </h2>
         <p className="text-gray-600 text-sm">
           End-to-end mobile projects, from UX research to development and
           launch.

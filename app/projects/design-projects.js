@@ -97,7 +97,9 @@ const DesignProjects = () => {
     <div className="">
       {/* Header */}
       <div className="space-y-1">
-        <h2 className="text-xl font-semibold">Design Projects</h2>
+        <h2 className="text-xl font-semibold text-[#F84B82]">
+          Design Projects
+        </h2>
         <p className="text-gray-600 text-sm">
           Visual designs, UX researches, and anything in between.
         </p>
@@ -142,18 +144,21 @@ const DesignProjects = () => {
       </div>
 
       {/* Active Project Info */}
-      <div className="text-center w-96 mx-auto flex">
-        <div className="text-base font-medium truncate w-full text-left">
-          {originalProjects[activeIndex % originalLength].description}
-        </div>
-        <div className="text-base font-medium truncate w-full text-right">
+      <div className="mt-4 w-96 mx-auto">
+        <div className="rounded-xl  px-4 flex items-center justify-between">
+          {/* Description */}
+          <span className="text-sm text-gray-600">
+            {originalProjects[activeIndex % originalLength].description}
+          </span>
+
+          {/* Title Link */}
           <a
             href={originalProjects[activeIndex % originalLength].link}
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:underline"
+            className="text-sm font-semibold text-blue-600 hover:underline flex items-center gap-1 text-[#F84B82]"
           >
-            {originalProjects[activeIndex % originalLength].title}
+            {originalProjects[activeIndex % originalLength].title} →
           </a>
         </div>
       </div>
