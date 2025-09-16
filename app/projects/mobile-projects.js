@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const MobileProjects = () => {
   const projects = [
     {
@@ -79,9 +81,11 @@ const MobileProjects = () => {
 
               {/* Bottom: Image */}
               <div className="-mb-32 flex items-center justify-center">
-                <img
+                <Image
                   src={project.image}
                   alt={`${project.title} preview`}
+                  width={400}
+                  height={240}
                   className="max-w-none w-[400px] object-contain transform scale-110 translate-y-8 drop-shadow-md"
                 />
               </div>

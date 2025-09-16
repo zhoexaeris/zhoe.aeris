@@ -118,7 +118,7 @@ const DesignProjects = () => {
 
           return (
             <div
-              key={project.id}
+              key={`${project.id}-${index}`}
               className={`absolute w-96 h-[340px] rounded-xl shadow-xl overflow-hidden ${
                 isResetting ? "" : "transition-all duration-700 ease-in-out"
               }`}

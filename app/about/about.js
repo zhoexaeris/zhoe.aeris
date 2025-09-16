@@ -1,13 +1,14 @@
 "use client";
 import { useEffect, useState } from "react";
+import Image from "next/image";
 
 const About = () => {
   const polaroids = [
-    "./images/about/aizu-1.jpg",
-    "./images/about/aizu-2.jpg",
-    "./images/about/aizu-3.jpg",
-    "./images/about/aizu-4.jpg",
-    "./images/about/aizu-5.jpg",
+    "/images/about/aizu-1.jpg",
+    "/images/about/aizu-2.jpg",
+    "/images/about/aizu-3.jpg",
+    "/images/about/aizu-4.jpg",
+    "/images/about/aizu-5.jpg",
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -40,10 +41,13 @@ const About = () => {
           <div className="relative">
             {/* Gradient ring around avatar */}
             <div className="p-[3px] rounded-full">
-              <img
+              <Image
                 src="/images/zhoe-aeris.jpg"
                 alt="Zhoe Aeris"
+                width={128}
+                height={128}
                 className="object-cover w-24 h-24 sm:w-32 sm:h-32 rounded-full "
+                priority
               />
             </div>
 
@@ -54,9 +58,11 @@ const About = () => {
                 isShaking ? "animate-[shake_0.5s_ease-in-out]" : "rotate-6"
               }`}
             >
-              <img
+              <Image
                 src={polaroids[currentIndex]}
-                alt="Polaroid"
+                alt="Aizu"
+                width={56}
+                height={64}
                 onClick={handleClick}
                 className="w-full h-16 object-cover"
               />

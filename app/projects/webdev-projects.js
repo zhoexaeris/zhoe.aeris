@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const WebdevProjects = () => {
   const projects = [
     {
@@ -6,7 +8,7 @@ const WebdevProjects = () => {
       role: "Founding Product & Technology Lead",
       date: "2024",
       summary:
-        "Created Serbiz PH’s official marketing site to build brand presence before launch, including a launch waitlist system and V1–V2 redesigns.",
+        "Created Serbiz PH's official marketing site to build brand presence before launch, including a launch waitlist system and V1–V2 redesigns.",
       techStack: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Firebase"],
       contributions: [
         "Built and deployed the marketing website (V1 and V2).",
@@ -166,9 +168,11 @@ const WebdevProjects = () => {
             <div
               className={`flex-1 flex items-center justify-center ${project.bgColor}`}
             >
-              <img
+              <Image
                 src={project.image}
                 alt={`${project.title} preview`}
+                width={640}
+                height={360}
                 className="w-full  object-contain"
               />
             </div>

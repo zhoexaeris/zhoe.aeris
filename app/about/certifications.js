@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const Certifications = () => {
   const certifications = [
     {
@@ -42,9 +44,11 @@ const Certifications = () => {
             >
               {/* Certificate Image */}
               <div className="w-full h-full relative">
-                <img
+                <Image
                   src={cert.image}
                   alt={cert.title}
+                  width={400}
+                  height={256}
                   className="w-full h-full object-cover rounded-xl"
                 />
 
