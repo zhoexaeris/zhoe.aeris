@@ -3,6 +3,7 @@ import Experiences from "./experiences.js";
 import Education from "./education.js";
 import Certifications from "./certifications.js";
 import About from "./about.js";
+import Timeline from "./timeline.js";
 
 export default function Home() {
   return (
@@ -13,11 +14,8 @@ export default function Home() {
         {/* About Me */}
         <About />
 
-        {/* Experiences */}
-        <Experiences />
-
-        {/* Education */}
-        <Education />
+        {/* Timeline */}
+        <Timeline />
 
         {/* Others*/}
         <Certifications />
