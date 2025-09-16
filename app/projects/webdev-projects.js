@@ -14,7 +14,12 @@ const WebdevProjects = () => {
         "Built and deployed the marketing website (V1 and V2).",
         "Implemented launch waitlist functionality for V0.",
       ],
-      links: [{ label: "Showcase", href: "#" }],
+      links: [
+        {
+          label: "Showcase",
+          href: "https://www.canva.com/design/DAGzIBPVyM0/qPdgKdhUBhsLY6HAWmRp1Q/view?utm_content=DAGzIBPVyM0&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=ha528640f1e",
+        },
+      ],
       bgColor: "bg-serbiz-purple",
       borderColor: "border-serbiz-purple/20",
       hoverColor: "hover:shadow-serbiz-purple/40",
