@@ -26,7 +26,7 @@ const Certifications = () => {
   ];
 
   return (
-    <div className="w-full max-w-4xl mx-auto px-4 flex-1 flex flex-col gap-y-3 pb-8">
+    <div className="w-full max-w-4xl mx-auto px-4 flex-1 flex flex-col gap-y-2 pb-8">
       <h2 className="text-lg font-bold">Others</h2>
 
       {/* Certifications */}

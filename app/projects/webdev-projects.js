@@ -17,7 +17,7 @@ const WebdevProjects = () => {
       links: [
         {
           label: "Showcase",
-          href: "https://www.canva.com/design/DAGzIBPVyM0/qPdgKdhUBhsLY6HAWmRp1Q/view?utm_content=DAGzIBPVyM0&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=ha528640f1e",
+          href: "https://www.canva.com/design/DAGzIHI0vXs/pfL1YgqdC4YVIzKdxvS13g/view?utm_content=DAGzIHI0vXs&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h898a3ae6f3",
         },
       ],
       bgColor: "bg-serbiz-purple",
@@ -104,7 +104,7 @@ const WebdevProjects = () => {
           >
             {/* Left Section - Text */}
             <div
-              className={`flex-1 p-4 sm:p-6 lg:p-10 max-w-full lg:max-w-md bg-gradient-to-b from-white to-gray-50 border-l-4 ${project.borderColor}`}
+              className={`flex-1 p-4 sm:p-6 lg:p-10 max-w-full lg:max-w-md bg-gradient-to-b from-white to-gray-50 border-t-4 lg:border-t-0 lg:border-l-4 ${project.borderColor}`}
             >
               <h3 className="text-lg font-bold mb-2">{project.title}</h3>
               {project.role && (

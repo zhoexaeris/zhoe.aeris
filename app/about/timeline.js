@@ -151,23 +151,21 @@ const Journey = () => {
   return (
     <section className="w-full max-w-4xl px-4 mx-auto flex flex-col gap-y-4">
       {/* Section Header */}
-      <h2 className="text-lg font-semibold border-b border-gray-200 pb-3">
-        My Journey
-      </h2>
+      <h2 className="text-lg font-semibold ">My Journey</h2>
 
-      <div className="relative border-l-2 border-gray-200 ml-4">
+      <div className="relative ml-0 sm:ml-4 sm:border-l-2 sm:border-gray-200">
         {timeline.map((item) => (
-          <div key={item.id} className="mb-10 ml-6">
+          <div key={item.id} className="mb-8 sm:mb-10 sm:ml-6">
             {/* Timeline Marker */}
-            <span className="absolute -left-4 flex items-center justify-center w-6 h-6 bg-[#F84B82] rounded-full ring-4 ring-white"></span>
+            <span className="hidden sm:flex absolute -left-4 items-center justify-center w-6 h-6 bg-[#F84B82] rounded-full ring-4 ring-white"></span>
 
             {/* Content */}
             <div className="space-y-2">
-              <div className="flex items-center gap-3">
-                <h3 className="text-base font-bold text-[#F84B82]">
+              <div className="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-3">
+                <h3 className="text-sm sm:text-base font-bold text-[#F84B82]">
                   {item.title}
                 </h3>
-                <div className="bg-gray-200 text-gray-600 px-2 py-1 rounded-md text-xs font-medium">
+                <div className="self-start sm:self-auto bg-gray-200 text-gray-600 px-2 py-1 rounded-md text-[10px] sm:text-xs font-medium">
                   {item.date}
                 </div>
               </div>

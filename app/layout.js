@@ -24,6 +24,11 @@ const roboto = Roboto({
 export const metadata = {
   title: "♡ zhoe aeris ♡",
   description: "my 2024 portfolio",
+  icons: {
+    icon: "/web-logo.svg?v=3",
+    shortcut: "/web-logo.svg?v=3",
+    apple: "/web-logo.svg?v=3",
+  },
 };
 
 export default function RootLayout({ children }) {
