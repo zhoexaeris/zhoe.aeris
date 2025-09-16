@@ -1,8 +1,5 @@
 import Navbar from "./mainComponents/Navbar.js";
 import Header from "./mainComponents/Header.js";
-import Certifications from "./about/certifications.js";
-import Education from "./about/education.js";
-import Experiences from "./about/experiences.js";
 import Footer from "./mainComponents/Footer.js";
 
 export default function Home() {
