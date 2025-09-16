@@ -23,7 +23,7 @@ const WebdevProjects = () => {
       bgColor: "bg-serbiz-purple",
       borderColor: "border-serbiz-purple/20",
       hoverColor: "hover:shadow-serbiz-purple/40",
-      image: "./images/webdev-projects/serbiz_web.png",
+      image: "/images/webdev-projects/serbiz_web.png",
     },
     {
       id: 2,
@@ -49,7 +49,7 @@ const WebdevProjects = () => {
       bgColor: "bg-nurselink-teal",
       borderColor: "border-nurselink-teal/20",
       hoverColor: "hover:shadow-nurselink-teal/40",
-      image: "./images/webdev-projects/nurselink.png",
+      image: "/images/webdev-projects/nurselink.png",
     },
     {
       id: 3,
@@ -79,7 +79,7 @@ const WebdevProjects = () => {
       bgColor: "bg-spikezone-red",
       borderColor: "border-spikezone-red/20",
       hoverColor: "hover:shadow-spikezone-red/40",
-      image: "./images/webdev-projects/spikezone.png",
+      image: "/images/webdev-projects/spikezone.png",
     },
   ];
 

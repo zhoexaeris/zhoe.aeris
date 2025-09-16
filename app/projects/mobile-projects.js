@@ -11,7 +11,7 @@ const MobileProjects = () => {
       date: "2024",
       link: "https://www.canva.com/design/DAGYB3L7i0I/hXAdEDjGIJ1G_s09G1_RnA/view?utm_content=DAGYB3L7i0I&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hc5175fd2b9",
       linkLabel: "Pitch Deck",
-      image: "./images/mobile-projects/daily.png",
+      image: "/images/mobile-projects/daily.png",
       bgcolor: "bg-[#AEB77A]",
     },
     {
@@ -23,7 +23,7 @@ const MobileProjects = () => {
       date: "2024",
       link: "https://www.figma.com/proto/8QHUKf5n0actZc0NLIlEX2/Serbiz-V1?page-id=6124%3A1645&node-id=6124-2896&p=f&viewport=3385%2C1320%2C0.09&t=bOtWjOC1NIPYhN5D-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=6124%3A2896&show-proto-sidebar=1",
       linkLabel: "Pitch Deck",
-      image: "./images/mobile-projects/serbiz_app.png",
+      image: "/images/mobile-projects/serbiz_app.png",
       bgcolor: "bg-[#D265D8]",
     },
     {
@@ -35,7 +35,7 @@ const MobileProjects = () => {
       date: "2025",
       link: "https://www.figma.com/proto/Swp8fXUMECvmJxE6V4ec2L/INNOV8---Declutter-PH--Copy-?page-id=189%3A174&node-id=189-209&p=f&viewport=423%2C227%2C0.2&t=Udpl7heE6zJNJiPt-1&scaling=scale-down&content-scaling=fixed",
       linkLabel: "Pitch Deck",
-      image: "./images/mobile-projects/declutterph.png",
+      image: "/images/mobile-projects/declutterph.png",
       bgcolor: "bg-[#EDBE2C]",
     },
   ];

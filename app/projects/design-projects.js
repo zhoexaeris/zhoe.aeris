@@ -37,7 +37,7 @@ const DesignProjects = () => {
       title: "Pamana",
       description: "Hackathon Project",
       image: "/images/design-projects/pamana.png",
-      link: "",
+      link: "https://www.figma.com/proto/3FXq5u36Osclxlvwtrj3pz/INNOV8-Hackathon?page-id=200%3A1056&node-id=200-1448&p=f&viewport=45%2C134%2C0.1&t=gu9bPh2kcPC8cIOq-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=200%3A1448",
     },
   ];
 
