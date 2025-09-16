@@ -15,8 +15,8 @@ const WebdevProjects = () => {
       ],
       links: [{ label: "Showcase", href: "#" }],
       bgColor: "bg-serbiz-purple",
-      textcolor: "text-white",
-      hovercolor: "hover:shadow-serbiz-purple/40",
+      borderColor: "border-serbiz-purple/20",
+      hoverColor: "hover:shadow-serbiz-purple/40",
       image: "./images/webdev-projects/serbiz_web.png",
     },
     {
@@ -25,7 +25,7 @@ const WebdevProjects = () => {
       role: "Co-Designer & Frontend Developer",
       date: "2023",
       summary:
-        "A A centralized platform for Filipino nurses to search jobs and showcase resumes, built in collaboration with an external client for CSSWENG.",
+        "A centralized platform for Filipino nurses to search jobs and showcase resumes, built in collaboration with an external client for CSSWENG.",
       techStack: [
         "React + TypeScript",
         "Vite",
@@ -41,8 +41,8 @@ const WebdevProjects = () => {
         { label: "Live Demo", href: "https://nurse-link-one.vercel.app/" },
       ],
       bgColor: "bg-nurselink-teal",
-      textcolor: "text-white",
-      hovercolor: "hover:shadow-nurselink-teal/40",
+      borderColor: "border-nurselink-teal/20",
+      hoverColor: "hover:shadow-nurselink-teal/40",
       image: "./images/webdev-projects/nurselink.png",
     },
     {
@@ -71,8 +71,8 @@ const WebdevProjects = () => {
         { label: "Github", href: "https://github.com/axsulit/ccapdev_mco" },
       ],
       bgColor: "bg-spikezone-red",
-      textcolor: "text-white",
-      hovercolor: "hover:shadow-spikezone-red/40",
+      borderColor: "border-spikezone-red/20",
+      hoverColor: "hover:shadow-spikezone-red/40",
       image: "./images/webdev-projects/spikezone.png",
     },
   ];
@@ -92,85 +92,81 @@ const WebdevProjects = () => {
         {projects.map((project) => (
           <div
             key={project.id}
-            className={`flex flex-col lg:flex-row rounded-2xl overflow-hidden transition-all duration-300 ease-in-out transform hover:scale-[1.01] hover:shadow-lg group ${project.bgColor} ${project.hovercolor}`}
+            className={`flex flex-col lg:flex-row rounded-2xl overflow-hidden transition-all duration-300 ease-in-out transform hover:scale-[1.01] hover:shadow-lg group border ${project.borderColor} ${project.hoverColor}`}
           >
             {/* Left Section - Text */}
-            <div
-              className={`flex-1 p-6 lg:p-8 flex flex-col justify-between ${project.textcolor}`}
-            >
-              <div>
-                <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
-                {project.role && (
-                  <div className="mb-3">
-                    <p className="text-white text-sm italic">
-                      Role: {project.role}
-                    </p>
-                    {project.date && (
-                      <p className="text-white/90 text-xs mt-1">
-                        {project.date}
-                      </p>
-                    )}
-                  </div>
-                )}
-                {project.summary && (
-                  <p className="text-sm leading-snug text-white mb-4">
-                    {project.summary}
-                  </p>
-                )}
+            <div className="flex-1 p-4 sm:p-6 lg:p-10 max-w-full lg:max-w-md">
+              <h3 className="text-xl font-bold mb-2">{project.title}</h3>
+              {project.role && (
+                <p className="text-xs sm:text-sm text-gray-500 italic">
+                  {project.role} • {project.date}
+                </p>
+              )}
 
-                {project.techStack && project.techStack.length > 0 && (
-                  <div className="mb-4">
-                    <div className="text-sm font-medium text-white">
+              {project.summary && (
+                <p className="mt-3 sm:mt-4 text-gray-700 text-xs sm:text-sm leading-relaxed">
+                  {project.summary}
+                </p>
+              )}
+
+              {/* Tech Stack */}
+              {project.techStack?.length > 0 && (
+                <div className="mt-4 sm:mt-6">
+                  <div className="text-xs sm:text-sm text-gray-700">
+                    <span className="font-semibold text-gray-800">
                       Tech Stack:
-                    </div>
-                    <div className="text-sm text-white">
-                      {project.techStack.join(", ")}
-                    </div>
+                    </span>{" "}
+                    {project.techStack.join(", ")}
                   </div>
-                )}
+                </div>
+              )}
 
-                {project.contributions && project.contributions.length > 0 && (
-                  <div className="mb-4">
-                    <div className="text-sm font-medium text-white">
-                      My Contributions:
-                    </div>
-                    <ul className="list-disc list-inside space-y-1 text-sm text-white mt-1">
-                      {project.contributions.map((item, idx) => (
-                        <li key={idx}>{item}</li>
-                      ))}
-                    </ul>
+              {/* Contributions */}
+              {project.contributions?.length > 0 && (
+                <div className="mt-4 sm:mt-6 border-t border-gray-200 pt-3 sm:pt-4">
+                  <div className="text-xs sm:text-sm font-semibold text-gray-800 mb-2">
+                    My Contributions
                   </div>
-                )}
-
-                {project.links && project.links.length > 0 && (
-                  <div className="text-sm text-white flex flex-wrap gap-x-2 gap-y-1">
-                    {project.links.map((l, idx) => (
-                      <a
+                  <ul className="space-y-1 text-xs sm:text-sm text-gray-700">
+                    {project.contributions.map((item, idx) => (
+                      <li
                         key={idx}
-                        href={l.href}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="underline decoration-white/70 hover:decoration-white"
+                        className="flex items-start gap-1.5 sm:gap-2"
                       >
-                        {l.label}
-                      </a>
+                        <span className="text-green-500 mt-0.5">✔</span>
+                        <span>{item}</span>
+                      </li>
                     ))}
-                  </div>
-                )}
-              </div>
-              {!project.date && (
-                <span className="text-xs text-white/60 mt-4">
-                  {new Date().getFullYear()}
-                </span>
+                  </ul>
+                </div>
+              )}
+
+              {/* Links */}
+              {project.links?.length > 0 && (
+                <div className="mt-4 sm:mt-6">
+                  {project.links.map((l, idx) => (
+                    <a
+                      key={idx}
+                      href={l.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="block sm:inline-block w-full sm:w-auto px-4 py-2 bg-black text-white text-xs sm:text-sm font-medium rounded-full shadow hover:bg-gray-800 text-center"
+                    >
+                      {l.label}
+                    </a>
+                  ))}
+                </div>
               )}
             </div>
 
             {/* Right Section - Image */}
-            <div className="flex-1 flex items-center justify-center bg-white p-6 lg:p-8">
+            <div
+              className={`flex-1 flex items-center justify-center ${project.bgColor}`}
+            >
               <img
                 src={project.image}
                 alt={`${project.title} preview`}
-                className="w-full max-w-sm rounded-xl shadow-md object-cover"
+                className="w-full max-w-xs sm:max-w-sm lg:max-w-md object-contain"
               />
             </div>
           </div>
