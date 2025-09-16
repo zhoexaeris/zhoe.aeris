@@ -92,13 +92,15 @@ const WebdevProjects = () => {
         {projects.map((project) => (
           <div
             key={project.id}
-            className={`flex flex-col lg:flex-row rounded-2xl overflow-hidden transition-all duration-300 ease-in-out transform hover:scale-[1.01] hover:shadow-lg group border ${project.borderColor} ${project.hoverColor}`}
+            className={`flex flex-col lg:flex-row rounded-2xl overflow-hidden transition-all duration-300 ease-in-out transform hover:scale-[1.01] hover:shadow-lg group border ${project.hoverColor} hover:brightness-[1.05]`}
           >
             {/* Left Section - Text */}
-            <div className="flex-1 p-4 sm:p-6 lg:p-10 max-w-full lg:max-w-md">
+            <div
+              className={`flex-1 p-4 sm:p-6 lg:p-10 max-w-full lg:max-w-md bg-gradient-to-b from-white to-gray-50 border-l-4 ${project.borderColor}`}
+            >
               <h3 className="text-xl font-bold mb-2">{project.title}</h3>
               {project.role && (
-                <p className="text-xs sm:text-sm text-gray-500 italic">
+                <p className="text-xs sm:text-sm text-gray-500 italic ">
                   {project.role} • {project.date}
                 </p>
               )}
@@ -112,10 +114,10 @@ const WebdevProjects = () => {
               {/* Tech Stack */}
               {project.techStack?.length > 0 && (
                 <div className="mt-4 sm:mt-6">
-                  <div className="text-xs sm:text-sm text-gray-700">
-                    <span className="font-semibold text-gray-800">
-                      Tech Stack:
-                    </span>{" "}
+                  <div className="flex items-center gap-2 text-xs sm:text-sm font-semibold text-gray-800 uppercase ">
+                    Tech Stack
+                  </div>
+                  <div className="mt-1 text-xs sm:text-sm text-gray-700">
                     {project.techStack.join(", ")}
                   </div>
                 </div>
@@ -123,8 +125,8 @@ const WebdevProjects = () => {
 
               {/* Contributions */}
               {project.contributions?.length > 0 && (
-                <div className="mt-4 sm:mt-6 border-t border-gray-200 pt-3 sm:pt-4">
-                  <div className="text-xs sm:text-sm font-semibold text-gray-800 mb-2">
+                <div className="mt-4 sm:mt-6 pt-3 sm:pt-4">
+                  <div className="text-xs sm:text-sm font-semibold text-gray-800 uppercase mb-2 ">
                     My Contributions
                   </div>
                   <ul className="space-y-1 text-xs sm:text-sm text-gray-700">
@@ -150,7 +152,7 @@ const WebdevProjects = () => {
                       href={l.href}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="block sm:inline-block w-full sm:w-auto px-4 py-2 bg-black text-white text-xs sm:text-sm font-medium rounded-full shadow hover:bg-gray-800 text-center"
+                      className={`block sm:inline-block w-full sm:w-auto px-4 py-2 text-xs sm:text-sm font-medium rounded-full shadow text-white text-center transition-colors ${project.bgColor} hover:opacity-90`}
                     >
                       {l.label}
                     </a>
