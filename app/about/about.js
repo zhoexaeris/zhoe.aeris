@@ -73,11 +73,11 @@ const About = () => {
             {/* optional tiny tagline */}
             {/* <p className="text-xs text-gray-500 mt-1">Designer • Web Developer</p> */}
             <p className="mt-2 leading-relaxed text-sm text-gray-700">
-              Lorem ipsum. This is the about me section. I believe that{" "}
-              <b>love is at the heart of all meaningful endeavors</b>. With that
-              in mind, I am on a mission to <b>continue learning</b> and{" "}
-              <b>growing</b> in this field — to serve the people with my{" "}
-              <b>passion</b>, <b>creativity</b>, and <b>excellence</b>.
+              I thrive at the intersection of design and code — turning vision
+              into interaction and prototypes into products. With expertise
+              across UI/UX research, design, and development, I lead the
+              end-to-end process of creating intuitive, impactful digital
+              experiences.
             </p>
           </div>
         </div>

@@ -3,12 +3,31 @@ const Journey = () => {
     {
       id: 1,
       type: "experience",
-      title: "Serbiz (UI/UX Designer and Web Developer)",
+      title: "Serbiz (Founding Product & Tech Lead)",
       date: "May 2024 – December 2024",
       details: [
-        "Designed and developed the company website using Next.js and Tailwind CSS.",
-        "Implemented frontend pages and worked on UI refinements for Serbiz's P2P feature, contributing to its Top 3 Business App ranking in PH (January 2025).",
-        "Led in-app UX improvements that supported 20x user growth (1k to 20k) and boosted sign-up conversion by 15% (January 2025).",
+        <>
+          Defined <strong>product strategy</strong> and led the migration from{" "}
+          <strong>Serbiz Web</strong> to <strong>Serbiz App</strong>.
+        </>,
+        <>
+          Led the <strong>end-to-end UI/UX</strong> process — conducting
+          competitive analyses, creating user flows, and delivering a complete{" "}
+          <strong>Figma</strong> prototype.
+        </>,
+        <>
+          Managed the <strong>Agile</strong> workflow, coordinating closely with
+          developers through <strong>daily scrums</strong>.
+        </>,
+        <>
+          Oversaw <strong>App Store</strong> launch: <strong>TestFlight</strong>{" "}
+          betatesting, <strong>Apple</strong> guideline compliance, and creation
+          of marketing assets.
+        </>,
+        <>
+          Built V1 & V2 marketing websites with <strong>Next.js</strong> and{" "}
+          <strong>Tailwind CSS</strong>.
+        </>,
       ],
     },
     {
@@ -17,8 +36,26 @@ const Journey = () => {
       title: "SeriousMD (UI/UX Intern)",
       date: "May 2024 – August 2024",
       details: [
-        "Worked with pediatricians to design and prototype a baby vaccination tracker.",
-        "Delivered wireframes and prototypes that went into beta testing with real doctors.",
+        <>
+          Conducted <strong>user research</strong> and workflow studies with{" "}
+          <strong>5 pediatricians</strong> to understand real-world vaccination
+          tracking needs.
+        </>,
+        <>
+          Designed low-fidelity <strong>wireframes</strong> and interactive
+          prototypes in <strong>Figma</strong>, iterating based on direct
+          physician feedback.
+        </>,
+        <>
+          Presented research findings and design proposals to{" "}
+          <strong>C-level executives</strong>, ensuring alignment with company
+          goals and clinical workflows.
+        </>,
+        <>
+          Delivered <strong>foundational research and prototypes</strong> that
+          progressed into <strong>beta testing</strong> with selected
+          pediatricians.
+        </>,
       ],
     },
     {
@@ -27,20 +64,68 @@ const Journey = () => {
       title: "De La Salle University - Manila",
       date: "2021 – Present",
       details: [
-        "4th Year Bachelor of Science in Computer Science major in Software Technology",
-        "Cumulative GPA: 3.333",
-        "Department of Science and Technology (DOST) Merit Scholar",
-        "Relevant Coursework: Data Structures and Algorithms, Object-Oriented Programming, Database Systems, Software Engineering, Web Development",
+        <strong>
+          4th Year Bachelor of Science in Computer Science, major in Software
+          Technology
+        </strong>,
+        <>
+          Cumulative GPA: <strong>3.333</strong>
+        </>,
+        <strong>DOST Merit Scholar</strong>,
+        <>
+          <strong>La Salle Computer Society (LSCS)</strong>
+          <ul className="list-disc list-outside space-y-1 pl-4">
+            <li>
+              <em>
+                <strong>
+                  Associate Vice President, Training & Development
+                </strong>
+              </em>
+              <ul className="list-disc list-outside space-y-1 pl-4">
+                <li>
+                  Organized recruitment for junior officers to support
+                  organizational goals
+                </li>
+                <li>Led officer team buildings and development events</li>
+                <li>
+                  Trained and mentored 11 junior officers, enabling them to
+                  independently run events
+                </li>
+              </ul>
+            </li>
+            <li>
+              <em>
+                <strong>
+                  Executive, Programs Committee – Clash of the Brains (COTB)
+                </strong>
+              </em>
+              <ul className="list-disc list-outside space-y-1 pl-4">
+                <li>Built contestant registration systems</li>
+                <li>Supported event planning and program flow execution</li>
+              </ul>
+            </li>
+          </ul>
+        </>,
+        <>
+          <strong>Relevant Coursework:</strong> Data Structures and Algorithms,
+          Object-Oriented Programming, Database Systems, Software Engineering,
+          Web Development, Human-Computer Interaction
+        </>,
       ],
     },
     {
       id: 4,
       type: "education",
-      title: "Paranaque Science High School",
+      title: "Parañaque Science High School",
       date: "2015 – 2021",
       details: [
-        "Senior High School Graduate with High Honors (STEM)",
-        "Junior High School Graduate with Honors",
+        <>
+          Graduated with <strong>High Honors (STEM Strand)</strong>
+        </>,
+        <strong>
+          2018 Division ITCUP Champion (Multimedia – Webpage Design)
+        </strong>,
+        <strong>2018 CAL ICT Regional Champion (Webpage Design)</strong>,
       ],
     },
   ];
