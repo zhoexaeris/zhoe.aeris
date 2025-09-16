@@ -170,7 +170,7 @@ const WebdevProjects = () => {
               <img
                 src={project.image}
                 alt={`${project.title} preview`}
-                className="w-full max-w-xs sm:max-w-sm lg:max-w-md object-contain"
+                className="w-full  object-contain"
               />
             </div>
           </div>

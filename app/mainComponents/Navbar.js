@@ -27,7 +27,7 @@ const Navbar = ({ color }) => {
           style={{ fontFamily: "Inter, sans-serif" }}
         >
           <a
-            href="https://drive.google.com/file/d/1J60ZguzLY0pJHCPzgJjatSVbvxgU9pGG/view?usp=sharing"
+            href="https://drive.google.com/file/d/1NRSEc_9mXr4_PfvCstiCWY9uIbmDrQ-A/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
           >
