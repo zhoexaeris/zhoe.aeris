@@ -4,24 +4,23 @@ const Certifications = () => {
       title: "Introduction to HTML",
       provider: "Sololearn",
       year: "2024",
-      link: "#",
+      link: "https://drive.google.com/file/d/19W0KdcWTwzuqpj0YkIWEu48pmQnkqFAr/view?usp=sharing",
+      image: "/images/certifications/sololearn-html.jpg",
     },
     {
       title: "Introduction to CSS",
       provider: "Sololearn",
       year: "2024",
-      link: "#",
+      link: "https://drive.google.com/file/d/1UNEdxmz4sRbncAo4hicOWpYzbPc3mWn7/view?usp=sharing",
+      image: "/images/certifications/sololearn-css.jpg",
     },
     {
       title: "Introduction to JavaScript",
       provider: "Sololearn",
       year: "2024",
-      link: "#",
+      link: "https://drive.google.com/file/d/1PVrNViR4Mxi5nvYobZZl7akHNipaujOd/view?usp=sharing",
+      image: "/images/certifications/sololearn-js.jpg",
     },
-    { title: "Ruby", provider: "Sololearn", year: "2023", link: "#" },
-    { title: "Go", provider: "Sololearn", year: "2023", link: "#" },
-    { title: "Kotlin", provider: "Sololearn", year: "2023", link: "#" },
-    { title: "R", provider: "Sololearn", year: "2023", link: "#" },
   ];
 
   return (
@@ -34,14 +33,17 @@ const Certifications = () => {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           {certifications.map((cert, index) => (
-            <div
+            <a
               key={index}
-              className="w-full h-64 bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer border border-gray-100 group relative overflow-hidden"
+              href={cert.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full h-64 bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-200 transform hover:-translate-y-1 hover:brightness-[1.05] cursor-pointer border border-gray-100 group relative overflow-hidden block"
             >
               {/* Certificate Image */}
               <div className="w-full h-full relative">
                 <img
-                  src="/images/certifications/sololearn-ruby.jpg"
+                  src={cert.image}
                   alt={cert.title}
                   className="w-full h-full object-cover rounded-xl"
                 />
@@ -73,7 +75,7 @@ const Certifications = () => {
                   </svg>
                 </div>
               </div>
-            </div>
+            </a>
           ))}
         </div>
       </div>
