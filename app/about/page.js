@@ -4,6 +4,7 @@ import Education from "./education.js";
 import Certifications from "./certifications.js";
 import About from "./about.js";
 import Timeline from "./timeline.js";
+import Footer from "../mainComponents/Footer.js";
 
 export default function Home() {
   return (
@@ -19,6 +20,8 @@ export default function Home() {
 
         {/* Others*/}
         <Certifications />
+
+        <Footer />
       </div>
     </main>
   );
